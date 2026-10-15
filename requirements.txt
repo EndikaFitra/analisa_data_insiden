@@ -1,0 +1,27 @@
+# Dependencies untuk preprocessing_data_incident.ipynb & korelasi_data_incident.ipynb
+# Versi di-pin sesuai .venv yang dipakai saat analisis ini dijalankan.
+#
+# Cara pakai:
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#   .venv/bin/jupyter lab     # atau: .venv/bin/jupyter notebook
+#
+# Catatan: interpreter saat ini adalah Python 3.14.7.
+
+# --- Analisis data ---
+pandas==3.0.6
+numpy==2.5.4
+scipy==1.18.1          # stats: chi2_contingency, fisher_exact, kruskal, spearmanr,
+                       # false_discovery_control (butuh scipy >= 1.11)
+
+# --- Visualisasi ---
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# --- I/O Excel (impor Data_Incident_test.xlsx & ekspor korelasi_data_incident.xlsx) ---
+openpyxl==3.1.5
+
+# --- Notebook runtime ---
+jupyterlab==4.6.4
+ipykernel==7.4.0
+ipython==9.17.1
